@@ -4,7 +4,7 @@
  * Copyright 2018 emrubik Group Ltd. All rights reserved.
  * EMRubik PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *******************************************************************************/
-package com.emrubik.thread.test1;
+package com.emrubik.thread.s4.test1;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
