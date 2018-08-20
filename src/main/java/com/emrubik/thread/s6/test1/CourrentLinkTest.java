@@ -10,7 +10,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * TODO 这里请补充该类型的简述说明
@@ -22,7 +21,7 @@ public class CourrentLinkTest {
         ConcurrentLinkedQueue<Object> c = new ConcurrentLinkedQueue<Object>();
 
         // 用数组实现的有界阻塞队列
-        ArrayBlockingQueue abq = new ArrayBlockingQueue<>(1);
+//        ArrayBlockingQueue abq = new ArrayBlockingQueue<>(1);
         
 //        LinkedBlockingQueue是一个用链表实现的有界阻塞队列。此队列的默认和最大长度为
 //        Integer.MAX_VALUE。此队列按照先进先出的原则对元素进行排序。
