@@ -4,11 +4,11 @@ import java.util.concurrent.atomic.AtomicMarkableReference;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class AtomicReferenceTest {
-    public static AtomicReference<User> atomicUserRef = new
-            AtomicReference<User>();
+    
 
     static AtomicMarkableReference<String> atomicMarkableReference = new AtomicMarkableReference<String>("state",false);
-
+    
+    public static AtomicReference<User> atomicUserRef = new AtomicReference<User>();
     public static void main(String[] args) {
         User user = new User("conan", 15);
         atomicUserRef.set(user);
@@ -16,12 +16,7 @@ public class AtomicReferenceTest {
         atomicUserRef.compareAndSet(user, updateUser);
         System.out.println(atomicUserRef.get().getName());
         System.out.println(atomicUserRef.get().getOld());
-
-
         System.out.println("=========================");
-
-        User userA = new User("conan", 15, false);
-//        atomicMarkableReference.attemptMark(userA.isState(), true);
     }
 
     static class User {

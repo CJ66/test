@@ -25,7 +25,7 @@ public class ExchangerTest {
             public void run() {
                 try {
                     String B = "银行流水B"; // B录入银行流水数据
-                    TimeUnit.MILLISECONDS.sleep(4000);
+                    TimeUnit.MILLISECONDS.sleep(1000);
                     String A = exgr.exchange("c");
                     System.out.println("A和B数据是否一致：" + A.equals(B) + "，A录入的是："
                             + A + "，B录入是：" + B);
