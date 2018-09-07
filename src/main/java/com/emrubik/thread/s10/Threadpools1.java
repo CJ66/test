@@ -15,7 +15,7 @@ public class Threadpools1{
          */
         ExecutorService newCachedThreadPool = Executors.newCachedThreadPool();
         System.out.println("****************************newCachedThreadPool*******************************");
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 4; i++) {
             final int index = i;
             newCachedThreadPool.execute(new ThreadForpools(index));
         }

@@ -17,7 +17,7 @@ public class Threadpools2 {
         //线程池允许同时存在两个线程
         ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(2);
         System.out.println("****************************newFixedThreadPool*******************************");
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 4; i++) {
             final int index = i;
             newFixedThreadPool.execute(new ThreadForpools(index));
         }
